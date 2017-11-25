@@ -1,0 +1,2 @@
+# EncryptQR
+AES + QR 
