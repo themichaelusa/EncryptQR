@@ -35,7 +35,7 @@ class AES:
 """
 Test AES
 
-if __name__ == "main": 
+if __name__ == "__main__": 
     cipher = AES('mysecretpassword', BS=16)
     encrypted = cipher.encrypt('Secret Message A')
     decrypted = cipher.decrypt(encrypted)

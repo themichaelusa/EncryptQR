@@ -37,6 +37,7 @@ class EncryptQR:
 			image = Image.open(image_file)
 			image.load()
 			decodedData = zbarlight.scan_codes('qrcode', image)[0]
+		image_file.close()
 
 		with open('test.txt', "wb") as binary_file:
 			aes = self.generateAES(key, blockSize)
